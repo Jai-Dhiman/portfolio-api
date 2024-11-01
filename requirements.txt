@@ -3,7 +3,6 @@ flask-sqlalchemy
 flask-cors
 flask-limiter
 flask-caching
-pyjwt
 python-dotenv
 werkzeug
 pytest

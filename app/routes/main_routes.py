@@ -8,13 +8,13 @@ def get_about():
         "name": "Jai Dhiman",
         "title": "Full-Stack Web Developer",
         "location": "San Francisco, CA",
-        "summary": "Full-Stack Web Developer transitioning from a background in data analysis and music...",
+        "summary": "Full-Stack Web Developer with strong foundations in JavaScript, React, Ruby on Rails, and Python Flask. Successfully completed 500+ hours of intensive software development training at Actualize Coding Bootcamp, building multiple full-stack applications. Demonstrates exceptional ability to master new technologies, evidenced by Microsoft certifications in data analytics. Combines analytical thinking with creative problem-solving skills developed through a Bachelor's in Music Performance to deliver efficient, user-centric web solutions.",
         "key_skills": [
             "Full Stack Development",
-            "Data Analytics",
+            "RESTful APIs",
             "UI/UX Design",
-            "Process Optimization",
-            "Software Quality Assurance"
+            "Database Design",
+            "Strategic Planning"
         ]
     }
     return jsonify(about_data)
@@ -49,7 +49,7 @@ def get_experience():
 def get_skills():
     skills_data = {
         "technical": {
-            "languages_frameworks": ["JavaScript", "React.js", "Ruby", "Ruby on Rails", "HTML", "CSS", "SQL"],
+            "languages_frameworks": ["JavaScript", "React.js", "Ruby", "Ruby on Rails", "HTML", "CSS", "SQL", "Python", "Flask"],
             "data": ["PostgreSQL", "Power BI"],
             "tools": ["Visual Studio Code", "Git", "GitHub", "Power Platform"]
         },
