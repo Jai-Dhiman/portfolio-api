@@ -78,7 +78,7 @@ def get_projects():
             "technologies": ["React", "Ruby on Rails", "Audiveris", "OCR"],
             "github_link": "https://github.com/Jai-Dhiman/ScoreSnap-api",
             # "live_link": "YOUR_LIVE_LINK",
-            "image_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cameraegg.org%2Fwp-content%2Fuploads%2F2016%2F01%2FNikon-D500-Sample-Images-2.jpg&f=1&nofb=1&ipt=fd5a18bde1a4beb90d5f2612bc6b14dcdee2e1f0fa2cfe7891a5f7a78a9156fe&ipo=images"
+            "image_url": "/static/uploads/ScoreSnap.png"
         },
         # {
         #     "id": 2,
