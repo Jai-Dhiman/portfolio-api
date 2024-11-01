@@ -1,8 +1,9 @@
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request, jsonify, current_app
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from ..config import Config
+import logging
 
 contact_bp = Blueprint('contact', __name__)
 
@@ -13,14 +14,20 @@ def submit_contact():
         
         required_fields = ['name', 'email', 'message']
         for field in required_fields:
-            if field not in data:
+            if not data.get(field):
                 return jsonify({"error": f"Missing required field: {field}"}), 400
 
-        send_email_notification(data)
+        if not current_app.config.get('TESTING'):
+            try:
+                send_email_notification(data)
+            except Exception as e:
+                logging.error(f"Email sending failed: {str(e)}")
+                
+        return jsonify({"message": "Message received successfully"}), 200
         
-        return jsonify({"message": "Message sent successfully"}), 200
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        logging.error(f"Contact submission error: {str(e)}")
+        return jsonify({"error": "Internal server error"}), 500
 
 def send_email_notification(data):
     msg = MIMEMultipart()

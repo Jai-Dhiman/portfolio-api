@@ -12,6 +12,9 @@ def create_app():
     
     CORS(app)
     db.init_app(app)
+
+    import logging
+    logging.basicConfig(level=logging.INFO)
     
     setup_logging(app)
     register_error_handlers(app)

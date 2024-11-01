@@ -1,0 +1,56 @@
+2024-10-31 17:18:27,353 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-31 17:18:27,354 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-31 17:18:27,356 - INFO -  * Restarting with stat
+2024-10-31 17:18:28,204 - WARNING -  * Debugger is active!
+2024-10-31 17:18:28,232 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:18:50,970 - INFO - 127.0.0.1 - - [31/Oct/2024 17:18:50] "[33mGET /api/health HTTP/1.1[0m" 404 -
+2024-10-31 17:18:57,277 - INFO - 127.0.0.1 - - [31/Oct/2024 17:18:57] "GET /api/about HTTP/1.1" 200 -
+2024-10-31 17:19:32,352 - INFO - 127.0.0.1 - - [31/Oct/2024 17:19:32] "[33mGET /api/experiance HTTP/1.1[0m" 404 -
+2024-10-31 17:19:37,989 - INFO - 127.0.0.1 - - [31/Oct/2024 17:19:37] "GET /api/experience HTTP/1.1" 200 -
+2024-10-31 17:19:44,514 - INFO - 127.0.0.1 - - [31/Oct/2024 17:19:44] "GET /api/skills HTTP/1.1" 200 -
+2024-10-31 17:19:52,108 - INFO - 127.0.0.1 - - [31/Oct/2024 17:19:52] "GET /api/projects HTTP/1.1" 200 -
+2024-10-31 17:20:34,289 - INFO - 127.0.0.1 - - [31/Oct/2024 17:20:34] "[35m[1mPOST /api/contact HTTP/1.1[0m" 500 -
+2024-10-31 17:21:42,870 - INFO - 127.0.0.1 - - [31/Oct/2024 17:21:42] "[35m[1mPOST /api/contact HTTP/1.1[0m" 500 -
+2024-10-31 17:21:53,689 - INFO - 127.0.0.1 - - [31/Oct/2024 17:21:53] "[35m[1mPOST /api/contact HTTP/1.1[0m" 500 -
+2024-10-31 17:22:53,436 - INFO - 127.0.0.1 - - [31/Oct/2024 17:22:53] "[35m[1mPOST /api/contact HTTP/1.1[0m" 500 -
+2024-10-31 17:23:17,701 - INFO - 127.0.0.1 - - [31/Oct/2024 17:23:17] "GET /api/projects HTTP/1.1" 200 -
+2024-10-31 17:23:23,345 - INFO - 127.0.0.1 - - [31/Oct/2024 17:23:23] "[35m[1mGET /api/projects/1 HTTP/1.1[0m" 500 -
+2024-10-31 17:23:23,511 - INFO - 127.0.0.1 - - [31/Oct/2024 17:23:23] "GET /api/projects/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-31 17:24:42,136 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/app/tests/conftest.py', reloading
+2024-10-31 17:24:42,430 - INFO -  * Restarting with stat
+2024-10-31 17:24:43,774 - WARNING -  * Debugger is active!
+2024-10-31 17:24:43,814 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:29:32,906 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/app/models/__init__.py', reloading
+2024-10-31 17:29:33,155 - INFO -  * Restarting with stat
+2024-10-31 17:29:34,361 - WARNING -  * Debugger is active!
+2024-10-31 17:29:34,390 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:29:38,484 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/app/models/__init__.py', reloading
+2024-10-31 17:29:38,707 - INFO -  * Restarting with stat
+2024-10-31 17:29:39,686 - WARNING -  * Debugger is active!
+2024-10-31 17:29:39,709 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:31:07,999 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/tests/conftest.py', reloading
+2024-10-31 17:31:08,173 - INFO -  * Restarting with stat
+2024-10-31 17:31:09,942 - WARNING -  * Debugger is active!
+2024-10-31 17:31:09,973 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:31:11,020 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/tests/conftest.py', reloading
+2024-10-31 17:31:11,164 - INFO -  * Restarting with stat
+2024-10-31 17:31:12,365 - WARNING -  * Debugger is active!
+2024-10-31 17:31:12,395 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:31:41,866 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/app/routes/contact_routes.py', reloading
+2024-10-31 17:31:42,015 - INFO -  * Restarting with stat
+2024-10-31 17:31:43,345 - WARNING -  * Debugger is active!
+2024-10-31 17:31:43,370 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:32:01,768 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/tests/test_routes.py', reloading
+2024-10-31 17:32:01,898 - INFO -  * Restarting with stat
+2024-10-31 17:32:03,399 - WARNING -  * Debugger is active!
+2024-10-31 17:32:03,424 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:32:06,531 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/tests/test_routes.py', reloading
+2024-10-31 17:32:06,669 - INFO -  * Restarting with stat
+2024-10-31 17:32:08,033 - WARNING -  * Debugger is active!
+2024-10-31 17:32:08,060 - INFO -  * Debugger PIN: 227-075-126
+2024-10-31 17:33:06,939 - INFO -  * Detected change in '/Users/jdhiman/Documents/portfolio-api/app/__init__.py', reloading
+2024-10-31 17:33:07,054 - INFO -  * Restarting with stat
+2024-10-31 17:33:53,286 - INFO -  * Restarting with stat
+2024-10-31 17:34:03,246 - INFO -  * Restarting with stat
+2024-10-31 17:34:06,153 - INFO -  * Restarting with stat
