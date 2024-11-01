@@ -3,6 +3,10 @@ flask-sqlalchemy
 flask-cors
 flask-limiter
 flask-caching
+flask_migrate
 python-dotenv
 werkzeug
 pytest
+requests
+gunicorn
+psycopg2-binary

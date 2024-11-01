@@ -2,6 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from .config import Config
 from .models import db
+from flask_migrate import Migrate
 from .middleware.error_handlers import register_error_handlers
 from .utils.logging_config import setup_logging
 import os
@@ -12,6 +13,7 @@ def create_app():
     
     CORS(app)
     db.init_app(app)
+    migrate = Migrate(app, db)
 
     import logging
     logging.basicConfig(level=logging.INFO)

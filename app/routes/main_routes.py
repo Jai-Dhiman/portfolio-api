@@ -1,7 +1,15 @@
 from flask import Blueprint, jsonify
+from datetime import datetime
 from ..models import Project
 
 main_bp = Blueprint('main', __name__)
+
+@main_bp.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({
+        "status": "healthy",
+        "timestamp": datetime.datetime.now().isoformat()
+    }), 200
 
 @main_bp.route('/api/about', methods=['GET'])
 def get_about():
