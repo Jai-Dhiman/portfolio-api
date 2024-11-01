@@ -2,15 +2,6 @@ from flask import Blueprint, jsonify
 
 main_bp = Blueprint('main', __name__)
 
-@main_bp.route('/api/health', methods=['GET'])
-def health_check():
-    return jsonify({"status": "healthy"}), 200
-
-# app/routes/main_routes.py
-from flask import Blueprint, jsonify
-
-main_bp = Blueprint('main', __name__)
-
 @main_bp.route('/api/about', methods=['GET'])
 def get_about():
     about_data = {
@@ -90,3 +81,16 @@ def get_projects():
         }
     ]
     return jsonify(projects), 200
+
+@main_bp.route('/api/projects/<int:project_id>', methods=['GET'])
+def get_project_detail(project_id):
+    project = Project.query.get_or_404(project_id)
+    return jsonify({
+        'id': project.id,
+        'title': project.title,
+        'description': project.description,
+        'technologies': project.technologies,
+        'github_link': project.github_link,
+        'live_link': project.live_link,
+        'image_url': project.image_url
+    })
