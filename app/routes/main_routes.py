@@ -1,4 +1,5 @@
 from flask import Blueprint, jsonify
+from ..models import Project
 
 main_bp = Blueprint('main', __name__)
 
@@ -10,11 +11,9 @@ def get_about():
         "location": "San Francisco, CA",
         "summary": "Full-Stack Web Developer with strong foundations in JavaScript, React, Ruby on Rails, and Python Flask. Successfully completed 500+ hours of intensive software development training at Actualize Coding Bootcamp, building multiple full-stack applications. Demonstrates exceptional ability to master new technologies, evidenced by Microsoft certifications in data analytics. Combines analytical thinking with creative problem-solving skills developed through a Bachelor's in Music Performance to deliver efficient, user-centric web solutions.",
         "key_skills": [
-            "Full Stack Development",
-            "RESTful APIs",
-            "UI/UX Design",
-            "Database Design",
-            "Strategic Planning"
+            "Full Stack Problem Solving",
+            "Data Driven Development",
+            "Attention to Detail",
         ]
     }
     return jsonify(about_data)
@@ -40,6 +39,15 @@ def get_experience():
                 "Managed daily operations in a high-volume food service environment",
                 "Collaborated with a team of 8 to optimize food preparation processes",
                 "Trained and mentored 5 new team members"
+            ]
+        },
+        {
+            "company": "Santa Rosa Symphony",
+            "position": "Teaching Assistant",
+            "period": "2017 - 2020",
+            "achievements": [
+                "Served as a teaching assistant for youth music programs, supporting the musical development of over 50 students aged 8-16 annually.",
+                "Coordinated logistics for 4 annual performances, ensuring smooth execution of events attended by up to 1,000 patrons."
             ]
         }
     ]
@@ -68,17 +76,18 @@ def get_projects():
             "title": "PDF/JPG to MusicXML Converter",
             "description": "Web application that converts PDF or JPG sheet music files into MusicXML format",
             "technologies": ["React", "Ruby on Rails", "Audiveris", "OCR"],
-            "github_link": "YOUR_GITHUB_LINK",
-            "live_link": "YOUR_LIVE_LINK"
+            "github_link": "https://github.com/Jai-Dhiman/ScoreSnap-api",
+            # "live_link": "YOUR_LIVE_LINK",
+            "image_url": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cameraegg.org%2Fwp-content%2Fuploads%2F2016%2F01%2FNikon-D500-Sample-Images-2.jpg&f=1&nofb=1&ipt=fd5a18bde1a4beb90d5f2612bc6b14dcdee2e1f0fa2cfe7891a5f7a78a9156fe&ipo=images"
         },
-        {
-            "id": 2,
-            "title": "Sales Performance Dashboard",
-            "description": "Comprehensive sales performance dashboard using Power BI",
-            "technologies": ["Power BI", "DAX", "M", "SQL"],
-            "github_link": "YOUR_GITHUB_LINK",
-            "live_link": "YOUR_LIVE_LINK"
-        }
+        # {
+        #     "id": 2,
+        #     "title": "Sales Performance Dashboard",
+        #     "description": "Comprehensive sales performance dashboard using Power BI",
+        #     "technologies": ["Power BI", "DAX", "M", "SQL"],
+        #     "github_link": "YOUR_GITHUB_LINK",
+        #     # "live_link": "YOUR_LIVE_LINK"
+        # }
     ]
     return jsonify(projects), 200
 
@@ -91,6 +100,6 @@ def get_project_detail(project_id):
         'description': project.description,
         'technologies': project.technologies,
         'github_link': project.github_link,
-        'live_link': project.live_link,
+        # 'live_link': project.live_link,
         'image_url': project.image_url
     })
