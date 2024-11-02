@@ -8,7 +8,7 @@ main_bp = Blueprint('main', __name__)
 def health_check():
     return jsonify({
         "status": "healthy",
-        "timestamp": datetime.datetime.now().isoformat()
+        "timestamp": datetime.now().isoformat()
     }), 200
 
 @main_bp.route('/api/about', methods=['GET'])
