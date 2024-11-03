@@ -37,7 +37,6 @@ def send_email_notification(data):
     
     body = f"""
     New contact form submission:
-    
     Name: {data['name']}
     Email: {data['email']}
     Message: {data['message']}
@@ -45,7 +44,9 @@ def send_email_notification(data):
     
     msg.attach(MIMEText(body, 'plain'))
     
-    with smtplib.SMTP(Config.SMTP_SERVER, Config.SMTP_PORT) as server:
+    with smtplib.SMTP(Config.SMTP_SERVER, Config.SMTP_PORT, timeout=30) as server:
+        print("Connected to SMTP server")
         server.starttls()
         server.login(Config.SMTP_USERNAME, Config.SMTP_PASSWORD)
         server.send_message(msg)
+

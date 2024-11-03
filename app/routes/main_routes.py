@@ -81,21 +81,22 @@ def get_projects():
     projects = [
         {
             "id": 1,
+            "title": "Legacy Stories Blog Platform",
+            "description": "Developed a full-stack web application using Vue.js, TypeScript, and Ruby on Rails that enables my grandpa to document and share life stories, featuring rich text editing and image management, while implementing Docker containerization.",
+            "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL"],
+            "github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
+            # "live_link": "YOUR_LIVE_LINK"
+        },
+        {
+            "id": 2,
             "title": "PDF/JPG to MusicXML Converter",
-            "description": "Web application that converts PDF or JPG sheet music files into MusicXML format",
+            "description": "Built a web application that converts PDF or JPG sheet music files into MusicXML (.mxl) format, leveraging the Audiveris library for optical music recognition (OMR), enabling users to easily digitize and edit printed music scores.",
             "technologies": ["React", "Ruby on Rails", "Audiveris", "OCR"],
             "github_link": "https://github.com/Jai-Dhiman/ScoreSnap-api",
             # "live_link": "YOUR_LIVE_LINK",
             "image_url": "/static/uploads/ScoreSnap.png"
-        },
-        # {
-        #     "id": 2,
-        #     "title": "Sales Performance Dashboard",
-        #     "description": "Comprehensive sales performance dashboard using Power BI",
-        #     "technologies": ["Power BI", "DAX", "M", "SQL"],
-        #     "github_link": "YOUR_GITHUB_LINK",
-        #     # "live_link": "YOUR_LIVE_LINK"
-        # }
+        }
+        
     ]
     return jsonify(projects), 200
 
@@ -108,6 +109,6 @@ def get_project_detail(project_id):
         'description': project.description,
         'technologies': project.technologies,
         'github_link': project.github_link,
-        # 'live_link': project.live_link,
+        'live_link': project.live_link,
         'image_url': project.image_url
     })
