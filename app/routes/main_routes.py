@@ -90,6 +90,15 @@ def get_projects():
         },
         {
             "id": 2,
+            "title": "Personal Portfolio Website",
+            "description": "Designed and developed a dynamic portfolio website using a Flask backend and React frontend, implementing RESTful API endpoints and PostgreSQL database for content management. The responsive design showcases professional projects while demonstrating proficiency in modern full-stack development practices and cloud deployment.",
+            "technologies": ["Python Flask", "React", "PostgreSQL", "RESTful API"],
+            "frontend_github_link": "https://github.com/Jai-Dhiman/portfolio-frontend",
+            "backend_github_link": "https://github.com/Jai-Dhiman/portfolio-api",
+            # "live_link": "YOUR_LIVE_LINK",
+            "image_url": "/static/uploads/Portfolio.png"
+        },
+        {"id": 3,
             "title": "PDF/JPG to MusicXML Converter",
             "description": "Built a web application that converts PDF or JPG sheet music files into MusicXML (.mxl) format, leveraging the Audiveris library for optical music recognition (OMR), enabling users to easily digitize and edit printed music scores.",
             "technologies": ["React", "Ruby on Rails", "Audiveris", "OCR"],
