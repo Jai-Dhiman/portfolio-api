@@ -96,7 +96,7 @@ def get_projects():
             "frontend_github_link": "https://github.com/Jai-Dhiman/portfolio-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/portfolio-api",
             # "live_link": "YOUR_LIVE_LINK",
-            "image_url": "/static/uploads/Portfolio.png"
+            "image_url": "/static/uploads/PortfolioImage.png"
         },
         {"id": 3,
             "title": "PDF/JPG to MusicXML Converter",
