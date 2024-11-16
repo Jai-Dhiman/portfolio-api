@@ -86,13 +86,13 @@ def get_projects():
             "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/badeblog-api",
-            # "live_link": "YOUR_LIVE_LINK"
+            "live_link": "https://myideasmywords.up.railway.app/"
         },
         {
             "id": 2,
             "title": "Personal Portfolio Website",
-            "description": "Designed and developed a dynamic portfolio website using a Flask backend and React frontend, implementing RESTful API endpoints and PostgreSQL database for content management. The responsive design showcases professional projects while demonstrating proficiency in modern full-stack development practices and cloud deployment.",
-            "technologies": ["Python Flask", "React", "PostgreSQL", "RESTful API"],
+            "description": "Designed and developed a dynamic portfolio website using a Flask backend and React frontend, and implementing RESTful API endpoints . The responsive design showcases professional projects while demonstrating proficiency in modern full-stack development practices.",
+            "technologies": ["Python Flask", "React", "RESTful API"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/portfolio-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/portfolio-api",
             # "live_link": "YOUR_LIVE_LINK",
