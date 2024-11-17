@@ -83,7 +83,7 @@ def get_projects():
             "id": 1,
             "title": "Legacy Stories Blog Platform",
             "description": "Developed a full-stack web application using Vue.js, TypeScript, and Ruby on Rails that enables my grandpa to document and share life stories, featuring rich text editing and image management, while implementing Docker containerization.",
-            "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL"],
+            "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL", "Tailwind CSS"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/badeblog-api",
             "live_link": "https://myideasmywords.up.railway.app/",
