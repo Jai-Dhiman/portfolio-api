@@ -17,7 +17,7 @@ def get_about():
         "name": "Jai Dhiman",
         "title": "Full-Stack Web Developer",
         "location": "San Francisco, CA",
-        "summary": "Full-Stack Web Developer with strong foundations in JavaScript, React, Ruby on Rails, and Python Flask. Successfully completed 500+ hours of intensive software development training at Actualize Coding Bootcamp, building multiple full-stack applications. Demonstrates exceptional ability to master new technologies, evidenced by Microsoft certifications in data analytics. Combines analytical thinking with creative problem-solving skills developed through a Bachelor's in Music Performance to deliver efficient, user-centric web solutions.",
+        "summary": "Full-Stack Developer with strong foundations in JavaScript, React, Ruby on Rails, and Python Flask, combining analytical thinking with creative problem-solving to deliver efficient web solutions. Leveraging intensive bootcamp training and prior data analysis experience to build scalable, user-centric software applications.",
         "key_skills": [
             "Full Stack Problem Solving",
             "Data Driven Development",
@@ -34,9 +34,7 @@ def get_experience():
             "position": "Full-Stack Web Development",
             "period": "2024",
             "achievements": [
-                "Mastered a comprehensive tech stack including JavaScript, React.js, Ruby, and SQL",
-                "Developed and deployed full-stack web applications",
-                "Utilized version control systems like Git and GitHub"
+                "Completed 500+ hours of intensive coding practice and project-based learning.", "Participated in daily code reviews and pair programming sessions with peers.", "Contributed to collaborative projects using git workflow and agile methodologies.", "Developed and presented three full-stack applications during the program."
             ]
         },
         {
@@ -44,9 +42,15 @@ def get_experience():
             "position": "Operations Specialist",
             "period": "2023 - 2024",
             "achievements": [
-                "Managed daily operations in a high-volume food service environment",
-                "Collaborated with a team of 8 to optimize food preparation processes",
-                "Trained and mentored 5 new team members"
+                "Served as shift lead, effectively delegating daily tasks and responsibilities to team members.", "Demonstrated strong leadership and problem-solving abilities through effective team communication and operational decision-making."
+            ]
+        },
+        {
+            "company": "Berklee College of Music",
+            "position": "Bachelor of Music",
+            "period": "2020 - 2023",
+            "achievements": [
+                "Developed strong analytical thinking, attention to detail, and project management skills through complex musical analysis and ensemble work.", "Developed collaboration and adaptability skills through diverse ensemble performances and cross-cultural musical projects."
             ]
         },
         {
@@ -54,8 +58,7 @@ def get_experience():
             "position": "Teaching Assistant",
             "period": "2017 - 2020",
             "achievements": [
-                "Served as a teaching assistant for youth music programs, supporting the musical development of over 50 students aged 8-16 annually.",
-                "Coordinated logistics for 4 annual performances, ensuring smooth execution of events attended by up to 1,000 patrons."
+                "Managed educational program data and coordinated digital resources for 50+ students.", "Developed clear communication skills through teaching complex musical concepts."
             ]
         }
     ]
@@ -65,9 +68,9 @@ def get_experience():
 def get_skills():
     skills_data = {
         "technical": {
-            "languages_frameworks": ["JavaScript", "React.js", "Ruby", "Ruby on Rails", "HTML", "CSS", "SQL", "Python", "Flask"],
-            "data": ["PostgreSQL", "Power BI"],
-            "tools": ["Visual Studio Code", "Git", "GitHub", "Power Platform"]
+            "languages_frameworks": [ "React.js", "Vue.js", "Next.js", "TypeScript", "Redux", "Tailwind CSS", "HTML", "Chart.js"],
+            "data": ["Node.js", "Ruby on Rails", "Python Flask"],
+            "tools": ["PostgreSQL", "Redis", "Docker", "Git", "JWT", "Jest", "RSPec", "Swagger", "Railway", "CI/CD"]
         },
         "certifications": [
             "Microsoft Certified: PL-300 Power BI Data Analyst Associate",
@@ -79,10 +82,19 @@ def get_skills():
 @main_bp.route('/api/projects', methods=['GET'])
 def get_projects():
     projects = [
+        {"id": 1,
+            "title": "Music Artist Analytics Dashboard",
+            "description": "Full-stack music artist analytics dashboard integrating Spotify API, responsive data visualization with Chart.js, Redis caching for performance.",
+            "technologies": ["Next.js", "Node.js", "Typescript", "Express", "PostgreSQL", "Redis"],
+            "frontend_github_link": "https://github.com/Jai-Dhiman/resonance-frontend",
+            "backend_github_link": "https://github.com/Jai-Dhiman/resonance-api",
+            # "live_link": "YOUR_LIVE_LINK",
+            "image_url": "/static/uploads/sample.jpg"
+        },
         {
-            "id": 1,
+            "id": 2,
             "title": "Legacy Stories Blog Platform",
-            "description": "Developed a full-stack web application using Vue.js, TypeScript, and Ruby on Rails that enables my grandpa to document and share life stories, featuring rich text editing and image management, while implementing Docker containerization.",
+            "description": "Accessible blogging platform with rich text editing, JWT authentication, and image handling. Containerized with Docker.",
             "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL", "Tailwind CSS"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/badeblog-api",
@@ -90,18 +102,17 @@ def get_projects():
             "image_url": "/static/uploads/BadeBlog.png"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "Personal Portfolio Website",
-            "description": "Designed and developed a dynamic portfolio website using a Flask backend and React frontend, and implementing RESTful API endpoints . The responsive design showcases professional projects while demonstrating proficiency in modern full-stack development practices.",
-            "technologies": ["Python Flask", "React", "RESTful API"],
+            "description": "Responsive portfolio website with Flask REST API backend, containerized deployment, and automated build processes.",
+            "technologies": ["Python Flask", "React", "RESTful API", "Responsive Design"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/portfolio-frontend",
-            "backend_github_link": "https://github.com/Jai-Dhiman/portfolio-api",
-            # "live_link": "YOUR_LIVE_LINK",
+            "backend_github_link": "https://github.com/Jai-Dhiman/portfolio-api", "live_link": "https://jaidhimanportfolio.up.railway.app",
             "image_url": "/static/uploads/PortfolioImage.png"
         },
-        {"id": 3,
+        {"id": 4,
             "title": "PDF/JPG to MusicXML Converter",
-            "description": "Built a web application that converts PDF or JPG sheet music files into MusicXML (.mxl) format, leveraging the Audiveris library for optical music recognition (OMR), enabling users to easily digitize and edit printed music scores.",
+            "description": "A web application that converts PDF or JPG sheet music files into MusicXML (.mxl) format for music editing",
             "technologies": ["React", "Ruby on Rails", "Audiveris", "OCR"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/ScoreSnap-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/ScoreSnap-api",
