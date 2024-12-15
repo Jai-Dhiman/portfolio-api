@@ -84,17 +84,17 @@ def get_projects():
     projects = [
         {"id": 1,
             "title": "Music Artist Analytics Dashboard",
-            "description": "Full-stack music artist analytics dashboard integrating Spotify API, responsive data visualization with Chart.js, Redis caching for performance.",
-            "technologies": ["Next.js", "Node.js", "Typescript", "Express", "PostgreSQL", "Redis"],
+            "description": "Analytics dashboard integrating Spotify and YouTube APIs with Redis caching and rate limiting, featuring responsive artist search with auto-complete, and cross-platform statistics comparison.",
+            "technologies": ["Next.js", "Node.js", "Typescript", "Redis", "React Query", "Recharts"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/resonance-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/resonance-api",
-            # "live_link": "YOUR_LIVE_LINK",
-            "image_url": "/static/uploads/sample.jpg"
+            "live_link": "https://artistanalytics.up.railway.app/",
+            "image_url": "/static/uploads/ArtistAnalytics.png"
         },
         {
             "id": 2,
             "title": "Legacy Stories Blog Platform",
-            "description": "Accessible blogging platform with rich text editing, JWT authentication, and image handling. Containerized with Docker.",
+            "description": "•	Accessible blogging platform with rich text editing made for my grandpa’s life stories, features rich text editing. Containerized with Docker, deployed on Railway and has comprehensive test coverage.",
             "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL", "Tailwind CSS"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/badeblog-api",
