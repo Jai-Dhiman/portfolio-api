@@ -94,8 +94,8 @@ def get_projects():
         {
             "id": 2,
             "title": "Legacy Stories Blog Platform",
-            "description": "•	Accessible blogging platform with rich text editing made for my grandpa’s life stories, features rich text editing. Containerized with Docker, deployed on Railway and has comprehensive test coverage.",
-            "technologies": ["Ruby on Rails", "Vue.js", "TypeScript", "Docker", "PostgreSQL", "Tailwind CSS"],
+            "description": "Accessible blogging platform with rich text editing made for my grandpa’s life stories. Containerized with Docker, deployed on Railway and has comprehensive test coverage.",
+            "technologies": ["Vue.js", "Ruby on Rails", "TypeScript", "Docker", "PostgreSQL", "Tailwind CSS"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/badeblog-api",
             "live_link": "https://myideasmywords.up.railway.app/",
@@ -105,21 +105,11 @@ def get_projects():
             "id": 3,
             "title": "Personal Portfolio Website",
             "description": "Responsive portfolio website with Flask REST API backend, containerized deployment, and automated build processes.",
-            "technologies": ["Python Flask", "React", "RESTful API", "Responsive Design"],
+            "technologies": [ "React.js", "Python Flask", "RESTful API", "Responsive Design", "Docker"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/portfolio-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/portfolio-api", "live_link": "https://jaidhimanportfolio.up.railway.app",
             "image_url": "/static/uploads/PortfolioImage.png"
-        },
-        {"id": 4,
-            "title": "PDF/JPG to MusicXML Converter",
-            "description": "A web application that converts PDF or JPG sheet music files into MusicXML (.mxl) format for music editing",
-            "technologies": ["React", "Ruby on Rails", "Audiveris", "OCR"],
-            "frontend_github_link": "https://github.com/Jai-Dhiman/ScoreSnap-frontend",
-            "backend_github_link": "https://github.com/Jai-Dhiman/ScoreSnap-api",
-            # "live_link": "YOUR_LIVE_LINK",
-            "image_url": "/static/uploads/ScoreSnap.png"
         }
-        
     ]
     return jsonify(projects), 200
 
