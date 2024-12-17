@@ -98,7 +98,7 @@ def get_projects():
             "technologies": ["Vue.js", "Ruby on Rails", "TypeScript", "Docker", "PostgreSQL", "Tailwind CSS"],
             "frontend_github_link": "https://github.com/Jai-Dhiman/badeblog-frontend",
             "backend_github_link": "https://github.com/Jai-Dhiman/badeblog-api",
-            "live_link": "https://myideasmywords.up.railway.app/",
+            "live_link": "https://www.myideasmywords.com",
             "image_url": "/static/uploads/BadeBlog.png"
         },
         {
