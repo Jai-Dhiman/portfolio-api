@@ -17,11 +17,11 @@ def get_about():
         "name": "Jai Dhiman",
         "title": "Full-Stack Web Developer",
         "location": "San Francisco, CA",
-        "summary": "Full-Stack Developer with strong foundations in JavaScript, React, Ruby on Rails, and Python Flask, combining analytical thinking with creative problem-solving to deliver efficient web solutions. Leveraging intensive bootcamp training and prior data analysis experience to build scalable, user-centric software applications.",
+        "summary": "Frontend Developer with strong foundations in modern web technologies, combining analytical thinking with creative problem-solving to deliver engaging user experiences. Leveraging technical expertise and musical background to build responsive, user-centric applications.",
         "key_skills": [
-            "Full Stack Problem Solving",
-            "Data Driven Development",
-            "Attention to Detail",
+            "Frontend Development",
+            "User Experience Design",
+            "Performance Optimization",
         ]
     }
     return jsonify(about_data)
@@ -68,9 +68,9 @@ def get_experience():
 def get_skills():
     skills_data = {
         "technical": {
-            "languages_frameworks": [ "React.js", "Vue.js", "Next.js", "TypeScript", "Redux", "Tailwind CSS", "HTML", "Chart.js"],
-            "data": ["Node.js", "Ruby on Rails", "Python Flask"],
-            "tools": ["PostgreSQL", "Redis", "Docker", "Git", "JWT", "Jest", "RSPec", "Swagger", "Railway", "CI/CD"]
+            "languages_frameworks": [ "React.js", "Next.js", "TypeScript", "TanStack Suite", "Tailwind CSS", "HTML", "Vite", "Recharts"],
+            "data": ["Node.js", "Express", "Bun", "Hono", "PostgreSQL", "Drizzle ORM"],
+            "tools": ["AWS (S3, CloudFront)", "Redis", "Docker", "Git", "Jest", "Railway", "CI/CD"]
         },
         "certifications": [
             "Microsoft Certified: PL-300 Power BI Data Analyst Associate",
